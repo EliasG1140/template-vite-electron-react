@@ -68,5 +68,5 @@ function watchPreload(server) {
 const server = await createServer({ configFile: 'packages/renderer/vite.config.ts' })
 
 await server.listen()
-//await watchPreload(server)
+await watchPreload(server)
 await watchMain(server)

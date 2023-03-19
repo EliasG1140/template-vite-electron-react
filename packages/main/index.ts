@@ -1,8 +1,7 @@
 import { app, BrowserWindow } from 'electron'
+import { Application } from './application'
 
-app.whenReady().then(()=>{
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600
-  })
+app.whenReady().then(async ()=>{
+  await Application.init()
+  Application.instance.run()
 })
