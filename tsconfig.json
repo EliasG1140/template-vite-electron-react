@@ -1,5 +1,16 @@
 {
   "compilerOptions": {
-    "allowJs": true
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "jsx": "react-jsx"
   }
 }

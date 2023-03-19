@@ -1,0 +1,13 @@
+{
+  "extends": "./paths.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsxImportSource": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
