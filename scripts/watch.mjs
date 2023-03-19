@@ -1,7 +1,7 @@
 import { spawn } from 'child_process'
 import { createServer, build } from 'vite'
 import electron from 'electron'
-
+//add
 const query = new URLSearchParams(import.meta.url.split('?')[1])
 const debug = query.has('debug')
 
