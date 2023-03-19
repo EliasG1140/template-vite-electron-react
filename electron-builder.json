@@ -1,0 +1,30 @@
+{
+  "appId": "com.template.app",
+  "productName": "nameApp",
+  "copyright": "Copyright © 2023 template, Elias",
+  "asar": true,
+  "directories": {
+    "output": "release/${version}",
+    "buildResources": "resources"
+  },
+  "files": ["dist", "CHANGELOG.md", "LICENCE"],
+  "extraResources": [
+    {
+      "from": "resources/icon.png",
+      "to": "icon.png"
+    }
+  ],
+  "win": {
+    "icon": "resources/icon.ico",
+    "target": [
+      { "target": "nsis", "arch": ["x64", "ia32"] }
+    ]
+  },
+  "nsis": {
+    "artifactName": "${productName}-setup-${version}.${ext}",
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false
+  }
+}

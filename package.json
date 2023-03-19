@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "dist/main/index.cjs",
   "scripts": {
-    "dev": "concurrently -n watch \"node scripts/watch.mjs\""
+    "dev": "concurrently -n watch \"node scripts/watch.mjs\"",
+    "build": "tsc --noEmit -p packages/renderer/tsconfig.json && node scripts/build.mjs && electron-builder --publish never"
   },
   "keywords": [
     "TypeScript",
@@ -18,6 +19,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "concurrently": "^7.6.0",
     "electron": "^23.1.4",
+    "electron-builder": "^23.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
